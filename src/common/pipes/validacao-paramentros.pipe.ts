@@ -1,7 +1,7 @@
 // eslint-disable-next-line prettier/prettier
 import { ArgumentMetadata, BadRequestException, PipeTransform } from '@nestjs/common';
 
-export class JogadoresValidacaoParamentrosPipe implements PipeTransform {
+export class ValidacaoParamentrosPipe implements PipeTransform {
   transform(value: any, metadata: ArgumentMetadata) {
     if (!value) {
       throw new BadRequestException(
